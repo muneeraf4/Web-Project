@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Horse</title>
+    <style>
+         body{
+            background-image: url(Backgroundhorse.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Raleway','sans-serif';
+        font-weight: 400;
+        color:BLACK;
+        letter-spacing: 1px;
+     }
+     .container{
+        background-color: #fafafa;
+        margin: 250px;
+        box-shadow: rgb(0 , 0 ,0 , .1);
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-left: 10%;
+        width: 81.5%;
+
+       
+     }
+     .container-time{
+        background-color:#C8AD7F;
+        padding: 50px;
+        border:3px dashed #111110;
+        outline-offset: -30px;
+        text-align: center;
+
+     }
+     .heading{
+        font-size: 35px;
+        text-transform: uppercase;
+
+     }
+     .heading-days{
+        color: #111110;
+        font-size: 30px;
+     }
+     .container-form{
+        padding: 20px 0;
+        margin: 0 ,auto;
+        color: #000;
+        margin-bottom: 60px;
+        
+       
+
+     }
+     form{  
+        text-indent:10px ;
+        display: grid;
+        grid-row-gap: 20px;
+     }
+     .form-field{
+        display: flex;
+        justify-content: space-between;
+        
+     }
+     input ,select{
+        pad: 10px 15px;
+     }
+     form p{
+        font-weight: 600;
+        margin-bottom: 20px;
+
+     }
+     .btn{
+        background-color: rgb(0 , 0 ,0 , .95);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        font-size: 18px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+        box-shadow: 7px 10px 12px  rgb(0 , 0 ,0 , .1) ;
+        cursor: pointer;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        margin-top: 10px;
+        margin-left: 10px;
+   
+
+     }
+     .btn:hover{
+        transform:scale(1.03) ;
+        -webkit-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        box-shadow: 10px 12px 15px rgb(0 , 0 ,0 , .3);
+     }
+     nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 70px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+}
+nav ul li button {
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+nav ul li button:hover {
+  color: #e775d4;
+}
+nav ul li a:hover {
+  color: #e775d4;
+}a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+    </style>
+   
+</head>
+<body>
+    <div class="navbar">
+        <div>
+          <a href="website.html">J by Joy</a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="page2home.html">Home</a></li>
+            <li><a href="page2home.html">About Us</a></li>
+            <li>
+              <a href="page1.html"> Login </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    <div class="container">
+        <div class="container-time">
+            <h2 class="heading">Time Open</h2>
+            <h3 class="heading-days">Saturday-Thursday</h3>
+            <p>3pm - 11:30pm</p>
+            <hr>
+            <p>Call Us:(123) 34-50-667</p>
+        </div>
+        <div class="container-form">
+            <form action="/form_hourse" method="POST" id="form">
+                <h2 class="heading heading-yellow">Booking Online</h2>
+                <div class="form-field">
+                    <label><p>Name:
+                        <input type="text" id="name" name="Name"  required>
+                    </label></p>
+                    <label><p>Day:
+                    <select id="day" name="Day">
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                    </select></label></p>
+                    <label><p>Membership type:
+                        <select id="Mtype" name="Membershiptype" required>
+                            <option value="Hourly">Hourly</option>
+                            <option value="Daily">Daily</option>
+                            <option value="Monthly">Monthly</option>
+                        </select></label></p>
+                        <label><p>Number of person:
+                            <input type="number" id="numOfPerson" name="Numberofperson"    required>
+                    </label></p>
+                            <label><p>Select the Coatch:
+                                <select id="Coatchh" name="SelecttheCoatch"   required>
+                                    <option value="Asma">Asma</option>
+                                    <option value="Sara">Sara</option>
+                                    <option value="Nourah">Nourah</option>
+                                    <option value="Amal">Amal</option>
+                                </select></label></p>
+
+               
+                                <button class="btn" style="width:30%;"  type="submit" >Submit</button>
+                    
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

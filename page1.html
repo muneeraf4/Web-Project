@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>J by Joy</title>
+    <link rel="stylesheet" href="stylepage.css" />
+    <style>
+    
+      
+
+      
+         .reg {
+  width: 100%;
+ 
+  height:90vh ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  width: 50%;
+  top :-12%;
+  height: 65vh;
+  max-width: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+
+  margin-inline: 20px;
+}
+
+.form-box header h1 {
+  text-align: center;
+  color: #ca3cb2;
+}
+
+.form-box form {
+  margin-block: 30px;
+}
+
+input {
+  width: 90%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgba(204, 204, 204, 0.361);
+  font-size: 16px;
+  margin: 12px 0;
+  padding: 8px 0px;
+  margin-left: 5%
+}
+
+
+
+input[type="submit"] {
+  margin-block: 24px;
+  background-color: #e775d4;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 50%;
+  margin-left: 25%;
+  
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #ca3cb2;
+  cursor: pointer;
+
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.s-up {
+  text-align: center;
+  margin-block: 20px;
+}
+.s-up a {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(88, 32, 171);
+}
+
+.s-up a:hover {
+  color: blue;
+  text-decoration: underline;
+  
+}
+.J a{
+  color: #ca3cb2;
+
+}
+    </style>
+    
+    <!---we had linked our css file----->
+  </head>
+  <body>
+    <div class="full-page">
+      <div class="navbar">
+        <div class="J">
+          <a href="website.html">J by Joy</a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="page2home.html">Home</a></li>
+            <li><a href="page2home.html">About Us</a></li>
+            <li>
+              <a href="page1.html"> Login </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="reg">
+        <div class="form-box">
+          <header><h1>Login</h1></header>
+    
+          <form action="/sign_in" method="POST"  id="form" autocomplete="on">
+          
+             <input
+             type="email"
+             placeholder="name@domain.com"
+             required
+             id="emailid"
+             name="email"
+                    required/>
+            <input type="password" id="password" name="password"   placeholder=" Password" required />
+        
+            <input type="submit" value="Login"  style="text-align: center;"/>
+    
+            
+            <p class="s-up">Not a member?<a href="page2.html">SignUp</a></p>
+            
+          </form>
+          <div id="output">
+            <!-- Output will be displayed here -->
+        </div>
+        </div>
+      </div>
+
+       
+
+    <footer>
+      <div class="footer-content">
+        <h3 id="About">About Us:</h3>
+        <p>
+          At J By Joy , we believe that sports and physical activities play an
+          important part in improving people's quality of life. Our platform was
+          created out of a passion for sports and a desire to make them more
+          accessible to everyone. We recognize that in today's fast-paced
+          environment, finding the time and resources for your favorite sports
+          might be difficult. This is where we come in.
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          copyright &copy;2023 JByJoy. designed by Rahaf,Rawan,Muneera and Najd
+        </p>
+      </div>
+    </footer>
+
+    <!-- <script>
+      // JavaScript code to handle form submission and calculate total price
+      const form = document.getElementById("form");
+      const outputDiv = document.getElementById("output");
+
+      form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const nameInput = document.getElementById("name").value;
+        //  const ageInput = document.getElementById("password").value;
+         
+
+          const outputHTML = `
+              <h2>Form Values:</h2>
+              <p>Name: ${nameInput}</p>
+              
+          `;
+
+          outputDiv.innerHTML = outputHTML;
+      });
+  </script> -->
+  </body>
+</html>

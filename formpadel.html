@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Padel</title>
+    <style>
+         body{
+            background-image: url(Backgroundpadel.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Raleway','sans-serif';
+        font-weight: 400;
+        color: #fff;
+        letter-spacing: 1px;
+     }
+     .container{
+        background-color: #fafafa;
+        margin: 250px;
+        box-shadow: rgb(0 , 0 ,0 , .1);
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-left: 10%;
+        width: 81.5%;
+
+       
+     }
+     .container-time{
+        background-color:rgb(0 , 0 ,0 , .95);
+        padding: 50px;
+        border:3px dashed rgba(225, 225, 10, 0.915);
+        outline-offset: -30px;
+        text-align: center;
+
+     }
+     .heading{
+        font-size: 35px;
+        text-transform: uppercase;
+
+     }
+     .heading-days{
+        color:rgba(225, 225, 10, 0.915);
+        font-size: 30px;
+     }
+     .container-form{
+        padding: 20px 0;
+        margin: 0 ,auto;
+        color: #000;
+        margin-bottom: 60px;
+        
+       
+
+     }
+     form{  
+        text-indent:10px ;
+        display: grid;
+        grid-row-gap: 20px;
+     }
+     .form-field{
+        display: flex;
+        justify-content: space-between;
+        
+     }
+     input ,select{
+        pad: 10px 15px;
+     }
+     form p{
+        font-weight: 600;
+        margin-bottom: 20px;
+
+     }
+     .btn{
+        background-color: rgb(0 , 0 ,0 , .95);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        font-size: 18px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+        box-shadow: 7px 10px 12px  rgb(0 , 0 ,0 , .1) ;
+        cursor: pointer;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        margin-top: 10px;
+        margin-left: 10px;
+   
+
+     }
+     .btn:hover{
+        transform:scale(1.03) ;
+        -webkit-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        box-shadow: 10px 12px 15px rgb(0 , 0 ,0 , .3);
+     }
+     
+        nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 70px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+}
+nav ul li button {
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+nav ul li button:hover {
+  color: #e775d4;
+}
+nav ul li a:hover {
+  color: #e775d4;
+}a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+    </style>
+   
+</head>
+<body>
+    <div class="navbar">
+        <div>
+          <a href="website.html">J by Joy</a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="page2home.html">Home</a></li>
+            <li><a href="page2home.html">About Us</a></li>
+            <li>
+              <a href="page1.html"> Login </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    <div class="container">
+        <div class="container-time">
+            <h2 class="heading">Time Open</h2>
+            <h3 class="heading-days">Saturday-Thursday</h3>
+            <p>3pm - 11pm</p>
+            <hr>
+            <p>Call Us:(123) 34-50-667</p>
+        </div>
+        <div class="container-form">
+            <form action="/form_padel" method="POST" id="form">
+                <h2 class="heading heading-yellow">Booking Online</h2>
+                <div class="form-field">
+                    <label><p>Team name:
+                        <input type="text" id="name"  name="Teamname"  required>
+                    </label></p>
+                    <label><p>Select Date:<input type="date" id="date" name="Selectdate" required>
+                    </label></p>
+                    <label><p>Location:
+                    <select id="lo" name="Location">
+                        <option value="Alsahafah">Alsahafah</option>
+                        <option value="Alyasmin">Alyasmin</option>
+                        <option value="Hittin">Hittin</option>
+                        <option value="Alarid">Alarid</option>
+                        
+                    </select></label></p>
+                    <label><p>Time:
+                        <select id="Time" name="Time" required>
+                            <option value="3pm - 5pm">3pm - 5pm</option>
+                            <option value="5pm - 7pm">5pm - 7pm</option>
+                            <option value="7pm - 9pm">7pm - 9pm</option>
+                            <option value="9pm - 11pm">9pm - 11pm</option>
+                        </select></label></p>
+                        <label><p>Number of player:
+                            <select id="player" name="Numberplayer"  required>
+                                <option value="2" selected>2 </option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                            </select></label></p>
+                            <label><p>Select the Coatch:
+                                <select id="Co" name="coatch"   required>
+                                    <option value="Asma">Asma</option>
+                                    <option value="Sara">Sara</option>
+                                    <option value="Nourah">Nourah</option>
+                                    <option value="Amal">Amal</option>
+                                </select></label></p>
+
+               
+  
+                 
+                    
+                </div>
+                <button class="btn" style="width:15%;"  type="submit" >Submit</button>
+            </form>
+        </div>
+
+    </div>
+  
+      
+</body>
+</html>

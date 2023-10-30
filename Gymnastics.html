@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gymnastic page</title>
+
+  <style>
+  .container{
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        
+  }
+  
+     body{
+      height: 100%;
+      width: 100%;
+      background-image: url(GYMNASTICS\ background.jpg);
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      background-attachment: fixed;
+     }
+  .box{
+    width: 280px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 1s;
+
+  }
+  .box img{
+    display: block;
+    width:100%;
+    border-radius: 5px;
+  }
+  .box:hover{
+    transform: scale(1.3);
+    z-index: 3;
+  }
+  footer {
+  position: absolute;
+  bottom: 3;
+  left: 0;
+  right: 0;
+  height: 5px;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #000000;
+  
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #d7845a;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  font-weight: bold;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 50px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 70px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+  
+}
+nav ul li button {
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+nav ul li button:hover {
+  color: #e775d4;
+}
+nav ul li a:hover {
+  color: #e775d4;
+}a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+  </style>
+</head>
+<body>
+
+    <div class="navbar">
+      <div class="J">
+        <a href="website.html">J by Joy</a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="page2home.html">Home</a></li>
+          <li><a href="page2home.html">About Us</a></li>
+          <li>
+            <a href="page1.html"> Login </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  <div class="container">
+    <div class="box">
+      <a href="formGymnastics.html">
+      <img src="Acrofit1 gymn.jpg">
+    </div></a>
+    <div class="box">
+      <a href="formGymnastics.html">
+      <img src="forlife.jpg">
+    </div></a>
+    <div class="box">
+      <a href="formGymnastics.html">
+      <img src="Limber Gymnastic.jpg">
+    </div></a>
+    <div class="box">
+      <a href="formGymnastics.html">
+        <img src="Zero g -1.png">
+      </div></a>
+   
+  </div>
+  <div class="C">
+    <footer>
+      <div class="footer-content">
+        <h3 id="About">About Gymnastic:</h3>
+        <p>
+          Gymnastics is a sport that involves doing flips, jumps, and other cool moves. 
+          It requires strength, flexibility, and practice. 
+          There are different types of gymnastics, like artistic gymnastics where you do routines on different apparatus, 
+          and rhythmic gymnastics where you use props like ribbons and hoops. 
+          Gymnastics is fun and helps you stay fit.
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
